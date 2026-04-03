@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Tuisyen Sarjana Sukses - Academic Excellence</title>
+    <meta name="description" content="Pusat Tuisyen Sarjana Sukses - Helping students achieve academic excellence through experienced tutors and structured learning.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563EB',
+                        secondary: '#059669',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .whatsapp-pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item {
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        .nav-scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans antialiased">
+
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#home" class="flex items-center space-x-3">
+                    <img src="images/ptss-logo.jpg" alt="PTSS Logo" class="w-12 h-12 object-cover rounded-xl">
+                    <span class="hidden sm:block text-lg font-bold text-gray-800">Pusat Tuisyen<br>Sarjana Sukses</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary font-medium transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary font-medium transition-colors">About</a>
+                    <a href="#subjects" class="text-gray-700 hover:text-primary font-medium transition-colors">Subjects</a>
+                    <a href="#achievements" class="text-gray-700 hover:text-primary font-medium transition-colors">Achievements</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
+                </div>
+
+                <!-- WhatsApp CTA Button -->
+                <div class="flex items-center space-x-4">
+                    <a href="https://wa.me/60123456789" target="_blank" class="hidden sm:inline-flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-5 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl">
+                        <i class="fab fa-whatsapp text-lg"></i>
+                        <span>WhatsApp</span>
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="md:hidden text-gray-700 hover:text-primary p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-6">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="text-gray-700 hover:text-primary font-medium py-2">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary font-medium py-2">About</a>
+                    <a href="#subjects" class="text-gray-700 hover:text-primary font-medium py-2">Subjects</a>
+                    <a href="#achievements" class="text-gray-700 hover:text-primary font-medium py-2">Achievements</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary font-medium py-2">Contact</a>
+                    <a href="https://wa.me/60123456789" target="_blank" class="inline-flex items-center justify-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-full font-semibold transition-all">
+                        <i class="fab fa-whatsapp text-lg"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-emerald-600">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-40 h-40 bg-white rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-60 h-60 bg-white rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-white rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-8">
+                <i class="fas fa-graduation-cap text-yellow-300"></i>
+                <span class="text-white font-medium">Trusted by 500+ Students</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                Pusat Tuisyen<br>
+                <span class="text-yellow-300">Sarjana Sukses</span>
+            </h1>
+
+            <p class="text-xl sm:text-2xl text-blue-100 mb-4 max-w-3xl mx-auto">
+                Helping Students Achieve Academic Excellence
+            </p>
+
+            <p class="text-lg text-blue-200 mb-10 max-w-2xl mx-auto">
+                Expert tuition for Primary & Secondary students. Proven results through experienced teachers and structured learning programs.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://wa.me/60123456789" target="_blank" class="group inline-flex items-center space-x-3 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all shadow-xl hover:shadow-2xl">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                    <span>WhatsApp Us Now</span>
+                    <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <a href="#subjects" class="inline-flex items-center space-x-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-full text-lg font-semibold transition-all border border-white/30">
+                    <span>View Subjects</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+
+            <!-- Stats -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                    <div class="text-3xl sm:text-4xl font-bold text-white mb-1">500+</div>
+                    <div class="text-blue-200 text-sm">Students Taught</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                    <div class="text-3xl sm:text-4xl font-bold text-white mb-1">95%</div>
+                    <div class="text-blue-200 text-sm">Pass Rate</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                    <div class="text-3xl sm:text-4xl font-bold text-white mb-1">10+</div>
+                    <div class="text-blue-200 text-sm">Years Experience</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                    <div class="text-3xl sm:text-4xl font-bold text-white mb-1">A+</div>
+                    <div class="text-blue-200 text-sm">Top Results</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white text-2xl opacity-60"></i>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="py-20 lg:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-blue-100 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">About Us</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                    Why Choose <span class="text-primary">Sarjana Sukses</span>?
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    We are committed to providing quality education that helps every student reach their full potential. Our proven teaching methods and dedicated tutors ensure academic success.
+                </p>
+            </div>
+
+            <!-- Highlight Cards -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1: Experienced Tutors -->
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 text-center border border-blue-200">
+                    <div class="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-chalkboard-teacher text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Experienced Tutors</h3>
+                    <p class="text-gray-600">
+                        Our teachers are highly qualified with years of teaching experience in Malaysian curriculums.
+                    </p>
+                </div>
+
+                <!-- Card 2: Small Class Sizes -->
+                <div class="card-hover bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-3xl p-8 text-center border border-emerald-200">
+                    <div class="w-20 h-20 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-users text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Small Class Sizes</h3>
+                    <p class="text-gray-600">
+                        Limited students per class ensure personalized attention and better learning outcomes for every student.
+                    </p>
+                </div>
+
+                <!-- Card 3: Proven Results -->
+                <div class="card-hover bg-gradient-to-br from-yellow-50 to-orange-100 rounded-3xl p-8 text-center border border-yellow-200">
+                    <div class="w-20 h-20 bg-yellow-500 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-trophy text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Proven Improvement</h3>
+                    <p class="text-gray-600">
+                        Track record of helping students improve their grades significantly within months of joining.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SUBJECTS SECTION ==================== -->
+    <section id="subjects" class="py-20 lg:py-28 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-emerald-100 text-secondary px-4 py-2 rounded-full text-sm font-semibold mb-4">Our Subjects</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                    Subjects We <span class="text-secondary">Offer</span>
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive coverage of Malaysian school syllabuses for both primary and secondary levels.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Primary School Card -->
+                <div class="card-hover bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-book-open text-2xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">Primary School</h3>
+                            <p class="text-gray-500">Year 1 - Year 6</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="flex items-center space-x-3 bg-blue-50 rounded-xl px-4 py-3">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span class="font-medium text-gray-700">Bahasa Melayu</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-blue-50 rounded-xl px-4 py-3">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span class="font-medium text-gray-700">Bahasa Tamil</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-blue-50 rounded-xl px-4 py-3">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span class="font-medium text-gray-700">English</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-blue-50 rounded-xl px-4 py-3">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span class="font-medium text-gray-700">Mathematics</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-blue-50 rounded-xl px-4 py-3 col-span-2">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span class="font-medium text-gray-700">Science</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary School Card -->
+                <div class="card-hover bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-14 h-14 bg-emerald-600 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-2xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">Secondary School</h3>
+                            <p class="text-gray-500">Form 1 - Form 5</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="flex items-center space-x-3 bg-emerald-50 rounded-xl px-4 py-3">
+                            <i class="fas fa-check-circle text-secondary"></i>
+                            <span class="font-medium text-gray-700">Bahasa Melayu</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-emerald-50 rounded-xl px-4 py-3">
+                            <i class="fas fa-check-circle text-secondary"></i>
+                            <span class="font-medium text-gray-700">English</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-emerald-50 rounded-xl px-4 py-3">
+                            <i class="fas fa-check-circle text-secondary"></i>
+                            <span class="font-medium text-gray-700">Mathematics</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-emerald-50 rounded-xl px-4 py-3">
+                            <i class="fas fa-check-circle text-secondary"></i>
+                            <span class="font-medium text-gray-700">Science</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-emerald-50 rounded-xl px-4 py-3">
+                            <i class="fas fa-check-circle text-secondary"></i>
+                            <span class="font-medium text-gray-700">Sejarah</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-emerald-50 rounded-xl px-4 py-3">
+                            <i class="fas fa-check-circle text-secondary"></i>
+                            <span class="font-medium text-gray-700">Geography</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-emerald-50 rounded-xl px-4 py-3">
+                            <i class="fas fa-check-circle text-secondary"></i>
+                            <span class="font-medium text-gray-700">Biology</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-emerald-50 rounded-xl px-4 py-3">
+                            <i class="fas fa-check-circle text-secondary"></i>
+                            <span class="font-medium text-gray-700">Chemistry</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-emerald-50 rounded-xl px-4 py-3">
+                            <i class="fas fa-check-circle text-secondary"></i>
+                            <span class="font-medium text-gray-700">Physics</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-emerald-50 rounded-xl px-4 py-3">
+                            <i class="fas fa-check-circle text-secondary"></i>
+                            <span class="font-medium text-gray-700">Add. Maths</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-emerald-50 rounded-xl px-4 py-3 col-span-2">
+                            <i class="fas fa-check-circle text-secondary"></i>
+                            <span class="font-medium text-gray-700">Akauns</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ACHIEVEMENTS SECTION ==================== -->
+    <section id="achievements" class="py-20 lg:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">Success Stories</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                    Our Students' <span class="text-yellow-500">Success</span>
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Real results from real students. See what our students have achieved with our guidance.
+                </p>
+            </div>
+
+            <!-- Achievement Cards Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <!-- Achievement Card 1 -->
+                <div class="card-hover bg-gradient-to-br from-white to-blue-50 rounded-2xl p-6 shadow-lg border border-gray-100">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Ahmad Raziq</h3>
+                    <p class="text-primary font-semibold mb-3">A+ in SPM Mathematics</p>
+                    <p class="text-gray-600 text-sm italic">
+                        "The teachers here are very patient and explains concepts clearly. I improved from B to A+ in just 6 months!"
+                    </p>
+                </div>
+
+                <!-- Achievement Card 2 -->
+                <div class="card-hover bg-gradient-to-br from-white to-emerald-50 rounded-2xl p-6 shadow-lg border border-gray-100">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Nur Liyana</h3>
+                    <p class="text-primary font-semibold mb-3">A in PT3 Science</p>
+                    <p class="text-gray-600 text-sm italic">
+                        "I used to struggle with Science, but after joining Sarjana Sukses, I now understand every topic thoroughly."
+                    </p>
+                </div>
+
+                <!-- Achievement Card 3 -->
+                <div class="card-hover bg-gradient-to-br from-white to-purple-50 rounded-2xl p-6 shadow-lg border border-gray-100">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Daniel Tan</h3>
+                    <p class="text-primary font-semibold mb-3">Improved from C to A</p>
+                    <p class="text-gray-600 text-sm italic">
+                        "My Add Math grade improved significantly. The small class size really helps me ask questions freely."
+                    </p>
+                </div>
+
+                <!-- Achievement Card 4 -->
+                <div class="card-hover bg-gradient-to-br from-white to-pink-50 rounded-2xl p-6 shadow-lg border border-gray-100">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Siti Aishah</h3>
+                    <p class="text-primary font-semibold mb-3">A- in SPM Chemistry</p>
+                    <p class="text-gray-600 text-sm italic">
+                        "The practical approach to teaching Chemistry made all the difference. Highly recommend!"
+                    </p>
+                </div>
+
+                <!-- Achievement Card 5 -->
+                <div class="card-hover bg-gradient-to-br from-white to-orange-50 rounded-2xl p-6 shadow-lg border border-gray-100">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Muhammad Aidil</h3>
+                    <p class="text-primary font-semibold mb-3">A1 in PMR Mathematics</p>
+                    <p class="text-gray-600 text-sm italic">
+                        "My parents were so happy when I got A1. The exam-focused training really helped me prepare well."
+                    </p>
+                </div>
+
+                <!-- Achievement Card 6 -->
+                <div class="card-hover bg-gradient-to-br from-white to-cyan-50 rounded-2xl p-6 shadow-lg border border-gray-100">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Priya Devi</h3>
+                    <p class="text-primary font-semibold mb-3">Top 5% in Sejarah</p>
+                    <p class="text-gray-600 text-sm italic">
+                        "Sejarah used to be my weakest subject. Now I enjoy learning it and scored among the top in my class!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GALLERY SECTION ==================== -->
+    <section id="gallery" class="py-20 lg:py-28 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-blue-100 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">Our Space</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                    Our Learning <span class="text-primary">Environment</span>
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    A comfortable and conducive learning space designed for student success.
+                </p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="gallery-item rounded-2xl overflow-hidden shadow-lg">
+                    <img src="images/ptss-logo.jpg" alt="PTSS Logo" class="w-full h-48 object-cover">
+                </div>
+                <div class="gallery-item rounded-2xl overflow-hidden shadow-lg">
+                    <img src="images/students.jpg" alt="Students Learning" class="w-full h-48 object-cover">
+                </div>
+                <div class="gallery-item rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=400&h=300&fit=crop" alt="Classroom" class="w-full h-48 object-cover">
+                </div>
+                <div class="gallery-item rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop" alt="Study Session" class="w-full h-48 object-cover">
+                </div>
+                <div class="gallery-item rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop" alt="Group Study" class="w-full h-48 object-cover">
+                </div>
+                <div class="gallery-item rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=300&fit=crop" alt="Happy Students" class="w-full h-48 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="py-20 lg:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">Get In Touch</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                    Contact <span class="text-green-600">Us</span>
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Ready to help your child succeed? Reach out to us today!
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <!-- WhatsApp CTA -->
+                    <div class="bg-gradient-to-r from-green-500 to-green-600 rounded-3xl p-8 text-white">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
+                                <i class="fab fa-whatsapp text-4xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold">Chat With Us</h3>
+                                <p class="text-green-100">Quick response guaranteed!</p>
+                            </div>
+                        </div>
+                        <p class="mb-6 text-green-100">
+                            Have questions? Want to know about our classes? Message us directly on WhatsApp for instant response!
+                        </p>
+                        <a href="https://wa.me/60123456789" target="_blank" class="inline-flex items-center space-x-3 bg-white text-green-600 px-6 py-4 rounded-full font-bold text-lg hover:bg-green-50 transition-colors shadow-lg">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                            <span>Contact Us on WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <!-- Contact Details -->
+                    <div class="bg-slate-50 rounded-3xl p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Other Contact Info</h3>
+                        
+                        <div class="space-y-5">
+                            <!-- Phone -->
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-phone text-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Phone</p>
+                                    <p class="font-semibold text-gray-800">012-345 6789</p>
+                                </div>
+                            </div>
+
+                            <!-- Address -->
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-secondary text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Address</p>
+                                    <p class="font-semibold text-gray-800">No. 123, Jalan Sample,<br>Taman Seri, 12345 Kuala Lumpur</p>
+                                </div>
+                            </div>
+
+                            <!-- Operating Hours -->
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-clock text-yellow-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-500">Operating Hours</p>
+                                    <p class="font-semibold text-gray-800">Monday - Friday: 3:00 PM - 9:00 PM<br>Saturday - Sunday: 9:00 AM - 5:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps -->
+                <div class="space-y-6">
+                    <div class="rounded-3xl overflow-hidden shadow-xl h-80 lg:h-full min-h-[320px]">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15935.721534946788!2d101.6869!3d3.139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMDgnMjQuMiJOIDEwMcKwDQ1JzEyLjQiRQ!5e0!3m2!1sen!2smy!4v1234567890" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <p class="text-center text-gray-500 text-sm">
+                        <i class="fas fa-info-circle mr-1"></i>
+                        Visit us for a free consultation!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- Logo & About -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="images/ptss-logo.jpg" alt="PTSS Logo" class="w-12 h-12 object-cover rounded-xl">
+                        <span class="text-lg font-bold">Pusat Tuisyen Sarjana Sukses</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Empowering students to achieve academic excellence since 2014.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#subjects" class="hover:text-white transition-colors">Subjects</a></li>
+                        <li><a href="#achievements" class="hover:text-white transition-colors">Achievements</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i>012-345 6789</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Kuala Lumpur, Malaysia</li>
+                        <li>
+                            <a href="https://wa.me/60123456789" target="_blank" class="inline-flex items-center space-x-2 text-green-400 hover:text-green-300 mt-2">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp Us</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>&copy; 2024 Pusat Tuisyen Sarjana Sukses. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
+    <a href="https://wa.me/60123456789" target="_blank" class="fixed bottom-6 right-6 z-50 group">
+        <div class="relative">
+            <div class="absolute -inset-4 bg-green-500 rounded-full opacity-20 animate-ping"></div>
+            <div class="relative w-16 h-16 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-2xl transition-all group-hover:scale-110">
+                <i class="fab fa-whatsapp text-white text-3xl"></i>
+            </div>
+            <span class="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                Chat on WhatsApp
+            </span>
+        </div>
+    </a>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+            });
+        });
+
+        // Sticky Navbar Background Change on Scroll
+        const navbar = document.getElementById('navbar');
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+            lastScrollY = window.scrollY;
+        });
+
+        // Smooth scroll for anchor links (backup for browsers without CSS scroll-behavior)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
